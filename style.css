@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Anton & display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 90px;
+    width: auto;
+    background-color: rgba(255, 0, 0, 0.7);
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-shadow: 0 0 5px #000;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #fff;
+}
+
+.logo{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo span{
+    color: #000;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display: none;
+}
+
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    list-style-type: upper-roman;
+    border: outset 3px #fff;
+    margin-top: 25px;
+}
+
+main{
+    background-image: url(./fotos/formasbasicas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;   
+}
+
+.call{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: right;
+    margin: 20px;
+    padding: 10px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.call p{
+    color:#fff;
+    margin-bottom: 40px;
+    font-family:'Anton', sans-serif;
+    font-size: 30px;
+}
+
+.callb{
+    background-color: rgba(255, 0, 0, 0.7);
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+}
+
+h2{
+    background-color: rgba(255, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color:#fff;
+    text-shadow: 0 0 5px #000;
+    font-size: 50px;
+    padding: 10px;
+}
+
+h2{
+    animation-duration: 3s;
+    animation-name: aparecer2;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer2{
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nosotros{
+    width: 100%;
+    height: 900px;
+    margin-bottom: auto;
+}
+
+.nlef{
+    background-image: url(./fotos/plazamonoblock.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+.nright{
+    padding: 20px;
+}
+
+.nright h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.nright p{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.dest{
+    background-color: rgba(78, 75, 75, 0.5);
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px;
+    grid-gap: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.itemd{
+    height: 440px;
+    margin-top: 35px;
+    border: 5px solid rgba(255, 0, 0, 0.5);
+}
+
+.itemA{
+    background-image: url(./fotos/autos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.itemB{
+    background-image: url(./fotos/grua.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.itemC{
+    background-image: url(./fotos/remolque.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.botonp{
+    background-color: rgba(255, 0, 0, 0.7);
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    margin-left: 370px;
+    font-size: 35px;
+}
+
+.p{
+    font-size: 40px;
+    text-align: center;
+}
+.pB{
+    margin-top: 40px;
+}
+
+.video{
+    width: 100%;
+    height: 600px;
+}
+
+.pD{
+    margin-top: 40px;
+}
+
+.galeria{
+    background-color: rgba(78, 75, 75, 0.5);
+    height: auto;
+    width: 100%;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 550px);
+    grid-gap: 40px;
+}
+
+.item{
+    width: 100%;
+    height: auto;
+    border: 8px solid rgba(255, 0, 0, 0.5);
+}
+
+.item:hover{
+    transform: scale(1.08);
+    transition: all 1.0s;
+}
+
+.item1{
+    background-image: url(./fotos/grua.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(./fotos/auto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(./fotos/camiones.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(./fotos/remolque.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background-image: url(./fotos/autos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    background-image: url(./fotos/camionrobot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    background-image: url(./fotos/variado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8{
+    background-image: url(./fotos/caja.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.capi{
+    width: 400px;
+    height: 400px;
+    margin-left: 350px;
+    border: outset 10px rgba(255, 0, 0, 0.5);
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+.gba{
+    width: 400px;
+    height: 400px;
+    margin-left: 350px;
+    border: outset 10px rgba(255, 0, 0, 0.5);
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+.datos{
+    color:  rgba(255, 0, 0, 0.5);
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.datos{
+    display: inline;
+}
+
+ol li .nombre{
+    text-decoration: none;
+    display: inline;
+}
+
+.pedido{
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.entrega{
+    margin-bottom: 20px;
+}
+
+
+.envio{
+    color:  rgba(255, 0, 0, 0.5);
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.lugar{
+    margin-bottom: 20px;
+}
+
+.consumidor{
+    color:  rgba(255, 0, 0, 0.5);
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.mm{
+    margin-bottom: 20px;
+}
+
+.dudas{
+    text-align: center;
+    margin-block: 35px;
+}
+
+.d{
+    color:  rgba(255, 0, 0, 0.9);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.enviar{
+    font-size: 50px;
+    height: 90px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ok{
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 90px;
+    height: 50px;
+}
+
+.ok:hover{
+    background-color: #fff;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color:  rgba(255, 0, 0, 0.5);
+    border: 4px solid #fff;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    box-shadow: 2px 2px 10px #000;
+}
+
+footer{
+    background-color: rgba(255, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+}    
+
+footer .redes{
+    margin-top: 15px;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+footer i{
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 35px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    header{
+        height: 95px;
+        font-size: 25px;
+    }
+    nav ul li{
+        font-size: 20px;
+    }
+    .call{
+        height: 300px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .call p{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .nright h3{
+        font-size: 35px;
+        margin-top: 50px;
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    .nright p{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .dest{
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        width: 750px;
+    }
+    .itemC{
+        grid-column: 1/3;
+        grid-row: 2/4;
+        height: 630px;
+    }
+    .botonp{
+        font-size: 30px;
+        margin-left: 210px;
+    }
+    .p{
+        font-size: 25px;
+    }
+    .video{
+        height: 300px;
+    }
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        height: 1000px;
+        padding: 10px;
+        margin: 0%;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .item4{
+        grid-column: 3/5;
+        grid-row: 2/4;
+    }
+    .item7{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        padding: 45%;
+    }
+    .item8{
+        grid-column: 3/5;
+        grid-row: 4/5;
+        padding: 45%;
+    }
+
+    .capi{
+        margin-left: 200px;
+    }
+    .gba{
+        margin-left: 200px;
+    }
+    footer{
+        font-size: 25px;
+    }
+    footer i{
+        font-size: 50px;
+        letter-spacing: 30px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .menu{
+        position: fixed;
+        background-color: rgba(255, 0, 0, 0.7);
+        width: auto;
+        height: auto;
+        margin-top: 60px;
+        left: -50%;
+        transition: .5s;
+    }
+    .menu ul li{
+        height: 10%;
+        display: block;
+        border-bottom: 1px solid #000;
+        margin: 0%;
+    }
+    .menu ul li a{
+        margin-left: 10px;
+    }
+    .menu ul li a :hover{
+        transition: 0.5s;
+    }    
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }   
+    #check:checked ~ .menu{
+        left: 0;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .call p{
+        font-size: 25px;
+    }
+    .nlef{
+        width: 50%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+    .nosotros{
+        display: flex;
+    }
+    .nright{
+        width: 50%;
+        height: 100%
+    }
+    .nright h3{
+        font-size: 50px;
+    }
+    .nright p{
+        font-size: 35px;
+    }
+    .nlef{
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .dest{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 450px);
+    }
+    .botonp{
+        font-size: 20px;
+        margin-left: 115px;
+    }
+    .p{
+        font-size: 25px;
+    }
+    .video{
+        height: 200px;
+    }
+    .capi{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .gba{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,250px);
+        height: auto;
+        padding: 5px;
+    }
+    footer{
+        font-size: 20px;
+    }
+    footer i{
+        font-size: 50px;
+        letter-spacing: 25px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    *{
+
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    header{
+        height: auto;
+    }
+    .menu{
+        position: fixed;
+        background-color: rgba(255, 0, 0, 0.7);
+        width: auto;
+        height: auto;
+        margin-top: 60px;
+        left: -50%;
+        transition: .5s;
+    }
+    .menu ul li{
+        height: 10%;
+        display: block;
+        border-bottom: 1px solid #000;
+        margin: 0%;
+    }
+    .menu ul li a{
+        margin-left: 10px;
+    }
+    .menu ul li a :hover{
+        background-color: #fff;
+        transition: 0.5s;
+    }    
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ .menu{
+        left: 0;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .call{
+        height: auto;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .call p{
+        font-size: 20px;
+    }
+    .nright h3{
+        font-size: 30px;
+    }
+    .nright p{
+        font-size: 25px;
+    }
+    .dest{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 340px);
+    }
+    .itemA{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .itemB{
+        background-size: cover;
+        background-position: center;
+        height: auto;        
+    }
+    .itemC{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .botonp{
+        margin-bottom: 10px;
+        margin-left: 350px;
+        font-size: 40px;
+    }
+    .botonp{
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .p{
+        font-size: 18px;
+    }
+    .pB{
+        margin-top: 20px;
+    }
+    .pD{
+        margin-top: 20px;
+    }
+    .video{
+        width: 100%;
+        height: 200px;
+    }
+    .galeria{
+        background-color: rgba(78, 75, 75, 0.5);
+        height: auto;
+        width: 100%;
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 260px);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .item{
+        width: 100%;
+        border: 5px solid rgba(255, 0, 0, 0.5);
+    }
+    .item:hover{
+        transform: scale(1.08);
+        transition: all 1.0s;
+    }
+    .item1{
+        background-image: url(./fotos/grua.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item2{
+        background-image: url(./fotos/auto.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item3{
+        background-image: url(./fotos/camiones.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item4{
+        background-image: url(./fotos/remolque.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item5{
+        background-image: url(./fotos/autos.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item6{
+        background-image: url(./fotos/camionrobot.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item7{
+        background-image: url(./fotos/variado.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item8{
+        background-image: url(./fotos/caja.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .capi{
+        width: 100%;
+        height: 400px;
+        margin-left: 2px;
+    }
+    .gba{
+        width: 100%;
+        height: 400px;
+        margin-left: 2px;
+    }
+    #indicaciones{
+        width: 100%;
+    }
+    footer{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    footer .redes{
+        padding: 25px;
+    }
+    footer i{
+        font-size: 50px;
+        color: #fff;
+        text-shadow: 0 0 10px #000;
+        letter-spacing: 20px;
+    }
+}

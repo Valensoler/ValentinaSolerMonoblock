@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../fotos/logo2.png">
+    <title>Contacto</title>
+</head>
+<body> 
+    <header>
+        <div class="logo"> Monoblock <span> Juguetes </span></div>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>    
+    
+        <nav class="menu"> 
+            <ul class="barra-navegacion"> 
+                <li><a href="../index.html"> Inicio</a></li>
+                <li><a href="./nosotros.html"> Nosotros</a></li>
+                <li><a href="./productos.html"> Productos</a></li>
+                <li><a href="./comercios.html"> Comercios</a></li>
+                <li><a href="./contacto.html"> Contacto</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <h2> Contactate con Nosotros</h2>
+
+    <fieldset>
+        <legend> Datos</legend>
+        <h3> Tus Datos</h3>
+        <form action="enviar.php" method="post" enctype="text/plain" netlify>
+        <ol type="circle">
+            <div class="datos">
+                <li class="nombre"><label for="names"> Nombres</label></li>
+                <li class="nombre"><input id="names" name="names" type="text" required></li>
+                <li class="nombre"><label for="apellidos"> Apellidos </label></li>
+                <li class="nombre"><input id="apellidos" name="apellidos" type="text" required></li>
+                <li class="nombre"><label for="correo"> Correo</label></li>
+                <li class="nombre"><input id="correo" name="correo" type="text" required></li>
+                <li class="nombre"><label for="telefono"> Telefono de contacto</label></li>
+                <li class="nombre"><input id="telefono" name="telefono" type="text" required></li>
+                <li class="nombre"><label for="edad"> Edad </label></li>
+                <li class="nombre"><input id="edad" name="edad" type="text" required></li>
+            </div>
+        </ol>
+        
+        <div class="enviar">
+            <input type="submit" value="Siguiente">
+            <input type="reset" value="Borrar">
+        </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend> Entrega </legend>
+        <h3> Datos de tu Entrega</h3>
+        <form action="enviar.php" method="post" enctype="text/plain" netlify>
+        <ol type="circle">
+            <div class="pedido">
+                <li class="entrega"><label for="entrega"> Dia de entrega</label></li>     
+                <li class="entrega"><input id="entrega" name="entrega" type="datetime-local" required></li>
+                <li class="entrega"><label for="indicaciones"> Indicaciones para entregar tu pedido</label></li>
+                <li class="entrega"><textarea name="indicaciones" id="indicaciones" cols="40" rows="4" placeholder="Escribe tus indicaciones."></textarea></li>
+            </div>
+        </ol>
+    </fieldset>        
+    
+    <fieldset>
+        <legend> Información</legend>
+        <h3> información de envio </h3>
+        <form action="enviar.php" method="post" enctype="text/plain" netlify>
+        <ol type="circle">
+            <div class="envio">
+                <li class="lugar">CABA<input type="radio" name="envios" value="CABA" checked></li> 
+                <li class="lugar">AMBA<input type="radio" name="envio" value="AMBA"></li> 
+                <li class="lugar"> Otras provincias<input type="radio" name="envios" value="Otra provincia"></li>
+                <li class="lugar"><input type="text">Provincia</input></li>
+            </div>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+    
+        <legend> Consumidor </legend>
+        <h3> Tipo de Compra </h3>
+        <form action="enviar.php" method="post" enctype="text/plain" netlify>
+        <ol type="circle">
+            <div class="consumidor">    
+                <li class="mm"> Compra mayorista<input type="checkbox" checked></li>
+                <li class="mm">Compra minorista<input type="checkbox"></li>
+            </div>
+        </ol>
+    </fieldset>
+       
+
+    <fieldset>
+        <legend> ¿En qué te podemos ayudar?</legend>
+        <h3> ¿Qué te Interesaría Saber? </h3>
+            <div class="dudas">
+            <select name="dudas">
+                <option class="d">Lista de precios</option>
+                <option class="d">Información de envios</option>
+                <option class="d">Compras</option>
+                <option class="d"> Catalogo </option>
+                <option class="d"> Otro </option>
+            </select>
+        </div>
+    </fieldset>
+
+    <div class="enviar">
+        <input type="submit" class="ok">
+        <input type="reset" value="Borrar" class="ok">
+    </div>
+
+    <a href="#" class="subir">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+
+    <footer>
+        <p><marquee behavior="scroll" direction="right"> Todos los derechos reservados por copyright </marquee></p>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/monoblock.juguetes/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/monoblock_juguetes/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
