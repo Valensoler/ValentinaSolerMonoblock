@@ -544,6 +544,9 @@ footer i{
     .logo{
         font-size: 25px;
     }
+    nav{
+        z-index: 99;
+    }
     .menu{
         position: fixed;
         background-color: rgba(255, 0, 0, 0.7);
@@ -653,10 +656,13 @@ footer i{
     header{
         height: auto;
     }
+    nav{
+        z-index: 99;
+    }
     .menu{
         position: fixed;
         background-color: rgba(255, 0, 0, 0.7);
-        width: auto;
+        width: 50%;
         height: auto;
         margin-top: 80px;
         left: -50%;
