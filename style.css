@@ -658,7 +658,7 @@ footer i{
         background-color: rgba(255, 0, 0, 0.7);
         width: auto;
         height: auto;
-        margin-top: 60px;
+        margin-top: 80px;
         left: -50%;
         transition: .5s;
     }
@@ -750,11 +750,10 @@ footer i{
         height: auto;
         width: 100%;
         display: grid;
-        margin-top: 50px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 260px);
         grid-gap: 20px;
-        padding: 20px;
+        padding: 10px;
     }
     .item{
         width: 100%;
